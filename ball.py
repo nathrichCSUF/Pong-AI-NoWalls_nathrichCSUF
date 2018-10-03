@@ -25,7 +25,7 @@ class Ball(Sprite):
     def blit_ball(self):
         self.screen.blit(self.image,self.rect)
     def start_game(self):
-        rand_angle=random.randint(-45,45)
+        rand_angle=random.randint(-60,60)
 
         if abs(rand_angle) < 5 or abs(rand_angle-180 < 5):
             rand_angle=random.randint(10,20)
